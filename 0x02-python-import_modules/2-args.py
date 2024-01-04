@@ -6,7 +6,10 @@ if __name__ == "__main__":
 
     count = len(sys.argv) - 1
 
-    print(f"{count} {'argument' if count == 1 else 'arguments'}:")
-    
-    for i, arg in enumerate(sys.argv[1:], start=1):
-        print(f"{i}: {arg}")
+    if count == 0:
+        print("0 arguments.")
+    else:
+        print(f"Number of argument{'s' if count != 1 else ''}: {count}{'.' if count == 0 else ''}")
+
+        for i in range(1, count + 1):
+            print(f"{i}: {sys.argv[i]}")
