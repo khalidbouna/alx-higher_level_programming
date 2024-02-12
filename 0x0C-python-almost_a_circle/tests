@@ -1,8 +1,0 @@
-# Install pycodestyle if you haven't already
-pip install pycodestyle
-
-# Validate your code against PEP 8
-pycodestyle your_code.py
-
-# Run unit tests
-python3 -m unittest discover tests
